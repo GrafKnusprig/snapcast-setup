@@ -88,3 +88,5 @@ sudo systemctl daemon-reload
 ```
 sudo systemctl restart snapclient
 ```
+
+Access Snapweb via `localhost:1780`
