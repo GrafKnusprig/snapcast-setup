@@ -90,3 +90,5 @@ sudo systemctl restart snapclient
 ```
 
 Access Snapweb via `localhost:1780`
+
+`start-snapserver-wo-controls.bat` starts the snapserver without port 1705 forwarding, which is the control port. So no client can control another clients volume anymore. But sometimes you also cannot hit play, which is a bummer.
