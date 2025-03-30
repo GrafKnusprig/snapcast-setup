@@ -38,11 +38,15 @@ https://github.com/badaix/snapdroid
 
 On Raspberry use:
 
-```sudo apt install snapclient```
+```
+sudo apt install snapclient
+```
 
 Run this on your Snapserver:
 
-```hostname -I```
+```
+hostname -I
+```
 
 returns something like 192.168.1.42
 
@@ -50,20 +54,29 @@ Find your USB soundcard ID
 
 Run:
 
-```aplay -l```
+```
+aplay -l
+```
 
 Look for something like:
 
-```card 1: USB [USB Audio], device 0: USB Audio```
+```
+card 1: USB [USB Audio], device 0: USB Audio
+```
 
-→ You'll use ```plughw:1,0```
+→ You'll use `plughw:1,0`
 
-```sudo systemctl edit snapclient```
+```
+sudo systemctl edit snapclient
+```
 
-```[Service]
+```
+[Service]
 ExecStart=
 ExecStart=/usr/bin/snapclient --host 192.168.1.42 --latency 120 --clientname RPi-Kitchen --soundcard plughw:1,0
-Nice=-5```
+Nice=-5
+
+```
 
 You can skip the latency, this is just if it is out of sync.
 
