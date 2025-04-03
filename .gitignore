@@ -1,0 +1,17 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS Finder files
+Icon?
+._*
+
+# macOS resource fork files
+*.swp
+*.swo
+*.DS_Store
+
+# VS Code settings
+.vscode/
+*.code-workspace
